@@ -1,4 +1,4 @@
-export default interface selectProps {
+export default interface SelectProps {
   items: Array<unknown>
   label: string
   hideDetails?: boolean

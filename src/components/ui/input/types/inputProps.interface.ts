@@ -1,4 +1,4 @@
-export default interface inputProps {
+export default interface InputProps {
   modelValue?: string | number | null
   label?: string
   type?: string

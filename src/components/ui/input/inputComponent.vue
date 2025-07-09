@@ -2,20 +2,20 @@
   <v-text-field
     v-model="model"
     class="input"
-    :label="props.label"
-    :type="props.type"
-    :hide-details="props.hideDetails"
-    :variant="props.variant"
-    :color="props.color"
-    :error="props.error"
-    :error-messages="props.errorMessages"
+    :label="label"
+    :type="type"
+    :hide-details="hideDetails"
+    :variant="variant"
+    :color="color"
+    :error="error"
+    :error-messages="errorMessages"
   />
 </template>
 
 <script setup lang="ts">
-import type inputProps from './interfaces/inputProps.interface'
+import type InputProps from '@/components/ui/input/types/inputProps.interface.ts'
 
-const props = withDefaults(defineProps<inputProps>(), {
+withDefaults(defineProps<InputProps>(), {
   modelValue: null,
   label: '',
   type: 'text',
@@ -38,5 +38,15 @@ const model = defineModel<string | number | null>({ default: () => '' })
 
 :deep(.v-field) {
   min-height: 40px !important;
+}
+
+:deep(.v-messages) {
+  position: absolute;
+}
+
+:deep(.v-input__details),
+:deep(.v-messages) {
+  padding: 0 !important;
+  letter-spacing: 0 !important;
 }
 </style>

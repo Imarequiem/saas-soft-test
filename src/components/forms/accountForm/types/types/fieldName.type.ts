@@ -1,1 +1,0 @@
-export type FieldName = 'login' | 'password' | 'label'
