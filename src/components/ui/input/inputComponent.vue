@@ -33,6 +33,7 @@ const model = defineModel<string | number | null>({ default: () => '' })
 <style scoped>
 .input {
   width: 100%;
+  min-width: 100px;
 }
 
 :deep(.v-field) {

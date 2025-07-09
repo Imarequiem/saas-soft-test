@@ -49,5 +49,6 @@ const model = defineModel()
 <style scoped>
 .select {
   width: 100%;
+  min-width: 100px;
 }
 </style>

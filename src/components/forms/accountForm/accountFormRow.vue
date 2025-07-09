@@ -119,7 +119,7 @@ const onBlur = (field: FieldName) => {
   width: 100svw;
   display: grid;
   align-items: start;
-  grid-template-columns: 400px 400px 400px auto 100px;
+  grid-template-columns: auto auto auto auto 100px;
   grid-gap: 1rem;
 }
 
