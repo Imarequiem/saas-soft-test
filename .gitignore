@@ -1,0 +1,35 @@
+# Node
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# System files
+Thumbs.db
+
+# Local build
+/.output/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Yarn
+.yarn/
+.pnp.*
